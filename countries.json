@@ -1,0 +1,97 @@
+[
+  {
+    "if": {
+      "weather": "warm",
+      "budget": "cheap",
+      "activity": "beach"
+    },
+    "then": ["Thailand", "Greece", "Morocco", "Philippines"]
+  },
+  {
+    "if": {
+      "weather": "warm",
+      "budget": "cheap",
+      "activity": "adventure"
+    },
+    "then": ["Costa Rica", "Thailand", "Nepal"]
+  },
+  {
+    "if": {
+      "weather": "warm",
+      "budget": "medium",
+      "activity": "cultural"
+    },
+    "then": ["Italy", "Mexico", "Turkey"]
+  },
+  {
+    "if": {
+      "weather": "warm",
+      "budget": "expensive",
+      "activity": "beach"
+    },
+    "then": ["Maldives", "Seychelles", "Hawaii"]
+  },
+  {
+    "if": {
+      "weather": "mild",
+      "budget": "cheap",
+      "activity": "cultural"
+    },
+    "then": ["Portugal", "Spain", "Greece"]
+  },
+  {
+    "if": {
+      "weather": "mild",
+      "budget": "medium",
+      "activity": "nature",
+      "eco_friendly": true
+    },
+    "then": ["New Zealand", "Switzerland", "Canada"]
+  },
+  {
+    "if": {
+      "weather": "cold",
+      "budget": "expensive",
+      "activity": "nature"
+    },
+    "then": ["Switzerland", "Iceland", "Norway"]
+  },
+  {
+    "if": {
+      "weather": "cold",
+      "budget": "medium",
+      "activity": "cultural"
+    },
+    "then": ["Japan", "South Korea", "Russia"]
+  },
+  {
+    "if": {
+      "activity": "adventure",
+      "eco_friendly": true
+    },
+    "then": ["Costa Rica", "New Zealand", "Nepal"]
+  },
+  {
+    "if": {
+      "beach": true,
+      "budget": "medium",
+      "popularity": "high"
+    },
+    "then": ["Spain", "Portugal", "Greece"]
+  },
+  {
+    "if": {
+      "culture": "high",
+      "modern": true,
+      "budget": "expensive"
+    },
+    "then": ["Japan", "South Korea", "Italy"]
+  },
+  {
+    "if": {
+      "friendly_locals": true,
+      "budget": "cheap"
+    },
+    "then": ["Thailand", "Mexico", "Philippines"]
+  }
+]
