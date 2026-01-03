@@ -1,0 +1,292 @@
+{
+  "Thailand": {
+    
+    "continent": "Asia",
+    "weather": "warm",
+    "avg_temperature": 28,
+    "budget": "cheap",
+    "eco_friendly": 0.7,
+    "safety": 0.6,
+    "local_friendliness": 0.8,
+    "avg_cost_day": 35,
+    "popularity": 0.85,
+
+    "activities": {
+        "hiking": 0.5,
+        "relaxation": 0.7,
+        "nature": 0.8,
+        "party": 0.6,
+        "backpacking": 0.4
+    },
+
+    "recommended_stay": {
+      "min": 5,
+      "max": 14,
+      "avg": 10
+    },
+
+    "best_months": ["December", "January", "February"],
+    "season": "Winter"
+  },
+
+    "Greece": {
+        "continent": "Europe",
+        "weather": "warm",
+        "avg_temperature": 27,
+        "budget": "medium",
+        "eco_friendly": 0.6,
+        "safety": 0.7,
+        "local_friendliness": 0.8,
+        "avg_cost_day": 50,
+        "popularity": 0.9,
+
+        "activities": {
+            "hiking": 0.6,
+            "relaxation": 0.7,
+            "nature": 0.6,
+            "party": 0.7,
+            "backpacking": 0.5
+        },
+
+        "recommended_stay": {
+            "min": 5,
+            "max": 14,
+            "avg": 10
+        },
+
+        "best_months": ["May", "June", "September"],
+        "season": "Summer"
+    },
+
+    "Morocco": {
+        "continent": "Africa",
+        "weather": "warm",
+        "avg_temperature": 30,
+        "budget": "cheap",
+        "eco_friendly": 0.5,
+        "safety": 0.6,
+        "local_friendliness": 0.7,
+        "avg_cost_day": 40,
+        "popularity": 0.7,
+
+        "activities": {
+            "hiking": 0.5,
+            "relaxation": 0.6,
+            "nature": 0.5,
+            "party": 0.4,
+            "backpacking": 0.6
+        },
+
+        "recommended_stay": {
+            "min": 4,
+            "max": 10,
+            "avg": 7
+        },
+
+        "best_months": ["March", "April", "October"],
+        "season": "Spring"
+    },
+
+    "Japan": {
+        "continent": "Asia",
+        "weather": "mild",
+        "avg_temperature": 16,
+        "budget": "expensive",
+        "eco_friendly": 0.8,
+        "safety": 0.9,
+        "local_friendliness": 0.8,
+        "avg_cost_day": 120,
+        "popularity": 0.9,
+
+        "activities": {
+            "hiking": 0.6,
+            "relaxation": 0.5,
+            "nature": 0.6,
+            "party": 0.4,
+            "backpacking": 0.3
+        },
+
+        "recommended_stay": {
+            "min": 7,
+            "max": 14,
+            "avg": 10
+        },
+
+        "best_months": ["March", "April", "May"],
+        "season": "Spring"
+    },
+
+    "Costa Rica": {
+        "continent": "America",
+        "weather": "warm",
+        "avg_temperature": 27,
+        "budget": "medium",
+        "eco_friendly": 0.9,
+        "safety": 0.7,
+        "local_friendliness": 0.8,
+        "avg_cost_day": 60,
+        "popularity": 0.8,
+
+        "activities": {
+            "hiking": 0.8,
+            "relaxation": 0.6,
+            "nature": 0.9,
+            "party": 0.5,
+            "backpacking": 0.7
+        },
+
+        "recommended_stay": {
+            "min": 5,
+            "max": 12,
+            "avg": 8
+        },
+
+        "best_months": ["December", "January", "February"],
+        "season": "Winter"
+    },
+
+    "Switzerland": {
+        "continent": "Europe",
+        "weather": "cold",
+        "avg_temperature": 5,
+        "budget": "expensive",
+        "eco_friendly": 0.8,
+        "safety": 0.9,
+        "local_friendliness": 0.7,
+        "avg_cost_day": 150,
+        "popularity": 0.85,
+
+        "activities": {
+            "hiking": 0.9,
+            "relaxation": 0.5,
+            "nature": 0.9,
+            "party": 0.3,
+            "backpacking": 0.4
+        },
+
+        "recommended_stay": {
+            "min": 5,
+            "max": 14,
+            "avg": 9
+        },
+
+        "best_months": ["June", "July", "August"],
+        "season": "Summer"
+    },
+
+    "Australia": {
+        "continent": "Oceania",
+        "weather": "warm",
+        "avg_temperature": 25,
+        "budget": "medium",
+        "eco_friendly": 0.7,
+        "safety": 0.8,
+        "local_friendliness": 0.9,
+        "avg_cost_day": 90,
+        "popularity": 0.85,
+
+        "activities": {
+            "hiking": 0.7,
+            "relaxation": 0.6,
+            "nature": 0.8,
+            "party": 0.5,
+            "backpacking": 0.6
+        },
+
+        "recommended_stay": {
+            "min": 7,
+            "max": 21,
+            "avg": 14
+        },
+
+        "best_months": ["December", "January", "February"],
+        "season": "Summer"
+    },
+
+    "South Korea": {
+        "continent": "Asia",
+        "weather": "mild",
+        "avg_temperature": 16,
+        "budget": "medium",
+        "eco_friendly": 0.7,
+        "safety": 0.9,
+        "local_friendliness": 0.8,
+        "avg_cost_day": 70,
+        "popularity": 0.8,
+
+        "activities": {
+            "hiking": 0.6,
+            "relaxation": 0.5,
+            "nature": 0.6,
+            "party": 0.6,
+            "backpacking": 0.5
+        },
+
+        "recommended_stay": {
+            "min": 5,
+            "max": 12,
+            "avg": 8
+        },
+
+        "best_months": ["April", "May", "October"],
+        "season": "Spring"
+    },
+
+    "Italy": {
+        "continent": "Europe",
+        "weather": "warm",
+        "avg_temperature": 24,
+        "budget": "medium",
+        "eco_friendly": 0.6,
+        "safety": 0.8,
+        "local_friendliness": 0.8,
+        "avg_cost_day": 60,
+        "popularity": 0.9,
+
+        "activities": {
+            "hiking": 0.5,
+            "relaxation": 0.6,
+            "nature": 0.5,
+            "party": 0.6,
+            "backpacking": 0.5
+        },
+
+        "recommended_stay": {
+            "min": 5,
+            "max": 14,
+            "avg": 10
+        },
+
+        "best_months": ["May", "June", "September"],
+        "season": "Summer"
+    },
+
+    "Mexico": {
+        "continent": "America",
+        "weather": "warm",
+        "avg_temperature": 28,
+        "budget": "cheap",
+        "eco_friendly": 0.6,
+        "safety": 0.7,
+        "local_friendliness": 0.8,
+        "avg_cost_day": 45,
+        "popularity": 0.85,
+
+        "activities": {
+            "hiking": 0.5,
+            "relaxation": 0.7,
+            "nature": 0.7,
+            "party": 0.6,
+            "backpacking": 0.6
+        },
+
+        "recommended_stay": {
+            "min": 5,
+            "max": 14,
+            "avg": 9
+        },
+
+        "best_months": ["December", "January", "February"],
+        "season": "Winter"
+    }
+}
