@@ -7,13 +7,30 @@ def load_json(data):
 
 #function that evaluates variables with fuzzification.py
 
-#function that applies rules and returns scores for each destination
+def apply_rule(fuzzified_inputs, rules, countries):
+
+    destination_scores = defaultdict(float)
+
+    for rule in rules:
+        condition = rule['if']
+        destinations = rule['then']
+
+        strength = #function that evaluates variables with fuzzification.py
+
+        if strength == 0:
+            continue
+        
+        for country in destinations:
+            if country in countries:
+                destination_scores[country] += strength
+
+    return destination_scores
 
 def evaluate_destinations(fuzzified_inputs, rules_data = "rules.json", countries_data = "countries.json"):
     
     rules = load_json(rules_data)
     countries = load_json(countries_data)
 
-    scores = ""
+    scores = apply_rule(fuzzified_inputs, rules, countries)
 
     return scores
