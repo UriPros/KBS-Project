@@ -1,36 +1,27 @@
-import json
 from collections import defaultdict
 
-def load_json(data):
-    with open(data, 'r') as file:
-        return json.load(file)
+def evaluate_rules(fuzzified_inputs, rules, destinations):
 
-#function that evaluates variables with fuzzification.py
+    # CHANGED: store fuzzy contributions, not floats
+    destination_scores = defaultdict(dict)
 
-def apply_rule(fuzzified_inputs, rules, countries):
+    for idx, rule in enumerate(rules):
+        condition = rule["if"]
+        recommended = rule["then"]
 
-    destination_scores = defaultdict(float)
-
-    for rule in rules:
-        condition = rule['if']
-        destinations = rule['then']
-
-        strength = #function that evaluates variables with fuzzification.py
+        # Rule strength (AND = min)
+        strength = 1.0
+        for variable, fuzzy_values in fuzzified_inputs.items():
+            if variable in condition:
+                label = condition[variable]
+                strength = min(strength, fuzzy_values.get(label, 0))
 
         if strength == 0:
             continue
-        
-        for country in destinations:
-            if country in countries:
-                destination_scores[country] += strength
+
+        # CHANGED: store each rule's contribution
+        for dest in recommended:
+            if dest in destinations:
+                destination_scores[dest][f"r{idx}"] = strength
 
     return destination_scores
-
-def evaluate_destinations(fuzzified_inputs, rules_data = "rules.json", countries_data = "countries.json"):
-    
-    rules = load_json(rules_data)
-    countries = load_json(countries_data)
-
-    scores = apply_rule(fuzzified_inputs, rules, countries)
-
-    return scores
