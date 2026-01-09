@@ -1,12 +1,7 @@
 def defuzzify_destination(scores):
-
     if not scores:
         return 0.0
-    
-    numerator = sum(scores.values())
-    denominator = len(scores)
-
-    return round (numerator / denominator, 2)
+    return max(scores.values())
 
 
 def defuzzify(scores):
