@@ -36,3 +36,15 @@ def fuzzify_user_input(user_input, fuzzy_sets):
             fuzzified_inputs[variable] = fuzzify(value, fuzzy_sets[variable])
 
     return fuzzified_inputs
+
+def extract_weather_label(fuzzified_inputs):
+    """
+    Convert fuzzy avg_temperature into a symbolic weather label
+    (cold / mild / warm)
+    """
+    temp_fuzzy = fuzzified_inputs.get("avg_temperature")
+
+    if not temp_fuzzy:
+        return None
+
+    return max(temp_fuzzy, key=temp_fuzzy.get)
