@@ -1,72 +1,76 @@
 [
-  {
-    "if": {
-      "avg_temperature": "warm",
-      "budget": "cheap"
+    {
+      "if": { "weather": "warm", "budget": "cheap" },
+      "then": ["Thailand", "Vietnam", "Mexico", "Brazil", "Egypt"]
     },
-    "then": ["Thailand", "Mexico", "Brazil", "Vietnam", "Egypt"]
-  },
-  {
-    "if": {
-      "avg_temperature": "warm",
-      "budget": "medium"
+    {
+      "if": { "weather": "warm", "budget": "medium" },
+      "then": ["Italy", "Spain", "Greece", "Portugal"]
     },
-    "then": ["Italy", "Spain", "Greece", "Portugal"]
-  },
-  {
-    "if": {
-      "avg_temperature": "warm",
-      "eco_friendly": "high"
+    {
+      "if": { "weather": "warm", "budget": "expensive" },
+      "then": ["Australia", "Japan", "Costa Rica"]
     },
-    "then": ["Costa Rica", "Australia"]
-  },
-  {
-    "if": {
-      "avg_temperature": "mild",
-      "budget": "medium"
+
+    {
+      "if": { "weather": "mild", "budget": "medium" },
+      "then": ["France", "Germany", "Italy", "Japan"]
     },
-    "then": ["France", "Germany", "Japan", "New Zealand", "South Africa"]
-  },
-  {
-    "if": {
-      "avg_temperature": "cold",
-      "budget": "expensive"
+    {
+      "if": { "weather": "mild", "distance": "close" },
+      "then": ["Spain", "France", "Portugal", "Germany"]
     },
-    "then": ["Switzerland", "Iceland", "Norway", "Canada"]
-  },
-  {
-    "if": {
-      "eco_friendly": "high",
-      "budget": "medium"
+
+    {
+      "if": { "weather": "cool", "budget": "expensive" },
+      "then": ["Norway", "Canada", "Switzerland"]
     },
-    "then": ["Costa Rica", "New Zealand", "Canada", "Norway"]
-  },
-  {
-    "if": {
-      "eco_friendly": "medium",
-      "budget": "cheap"
+    {
+      "if": { "weather": "cool", "distance": "medium" },
+      "then": ["Norway", "Iceland", "Canada"]
     },
-    "then": ["Thailand", "Vietnam", "Mexico", "Brazil"]
-  },
-  {
-    "if": {
-      "popularity": "high",
-      "budget": "medium"
+
+    {
+      "if": { "weather": "cold", "budget": "expensive" },
+      "then": ["Switzerland", "Iceland", "Norway"]
     },
-    "then": ["Italy", "France", "Spain", "Japan"]
-  },
-  {
-    "if": {
-      "popularity": "high",
-      "budget": "cheap"
+    {
+      "if": { "weather": "cold", "duration": "short" },
+      "then": ["Switzerland", "Iceland"]
     },
-    "then": ["Thailand", "Mexico", "Brazil"]
-  },
-  {
-    "if": {
-      "avg_temperature": "mild",
-      "eco_friendly": "high"
+
+    {
+      "if": { "distance": "far", "budget": "cheap" },
+      "then": ["Thailand", "Vietnam", "Egypt"]
     },
-    "then": ["New Zealand", "Canada", "Norway"]
-  }
+    {
+      "if": { "distance": "far", "budget": "medium" },
+      "then": ["Brazil", "South Africa", "Japan", "Costa Rica"]
+    },
+    {
+      "if": { "distance": "far", "duration": "long" },
+      "then": ["Australia", "New Zealand", "Brazil"]
+    },
+
+    {
+      "if": { "distance": "close", "budget": "medium" },
+      "then": ["Spain", "France", "Portugal", "Germany"]
+    },
+    {
+      "if": { "distance": "medium", "budget": "expensive" },
+      "then": ["Switzerland", "Norway", "Canada"]
+    },
+
+    {
+      "if": { "duration": "short", "distance": "close" },
+      "then": ["Spain", "France", "Portugal", "Germany"]
+    },
+    {
+      "if": { "duration": "medium", "distance": "medium" },
+      "then": ["Italy", "Greece", "Japan"]
+    },
+    {
+      "if": { "duration": "long", "weather": "warm" },
+      "then": ["Thailand", "Brazil", "Australia"]
+    }
 ]
