@@ -16,10 +16,7 @@ def evaluate_rules(fuzzified_inputs, rules, destinations):
                 strength = 0
                 break
 
-            strength = min(
-                strength,
-                fuzzified_inputs[variable].get(label, 0)
-            )
+            strength = min(strength, fuzzified_inputs[variable].get(label, 0))
 
         if strength == 0:
             continue
