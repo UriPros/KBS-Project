@@ -1,26 +1,21 @@
 import json
-from fuzzification import fuzzify_user_input, extract_weather_label
+from fuzzification import fuzzify_user_input
 from rule_evaluation import evaluate_rules
 from defuzzification import defuzzify
 
 
 
 def recommend_destination(user_input):
-    with open("destinations.json") as f:
+    with open("countries.json") as f:
         destinations = json.load(f)
 
-    with open("countries.json") as f:
+    with open("rules.json") as f:
         rules = json.load(f)
 
     with open("fuzzy_sets.json") as f:
         fuzzy_sets = json.load(f)
 
     fuzzified_inputs = fuzzify_user_input(user_input, fuzzy_sets) #fuzzification
-    fuzzified_inputs = fuzzify_user_input(user_input, fuzzy_sets)
-
-    # OPTIONAL, ho he posat just TO CHCK: print("FUZZIFIED INPUTS:", fuzzified_inputs)
-    weather_label = extract_weather_label(fuzzified_inputs)
-
 
     scores = evaluate_rules(fuzzified_inputs, rules, destinations) # rule evaluation
 
@@ -32,18 +27,3 @@ def recommend_destination(user_input):
     best = max(def_scores, key=def_scores.get) #choose best destination
 
     return best, def_scores
-
-if __name__ == "__main__":
-    user_input = {
-        "weather": 4,
-        "budget": 1,
-        "distance": 3,
-        "duration": 10
-    }
-
-    best, scores = recommend_destination(user_input)
-
-    print("Recommended destination:", best)
-    print("Scores:", dict(scores))
-
-
