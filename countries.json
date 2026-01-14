@@ -1,76 +1,258 @@
-[
-    {
-      "if": { "weather": "warm", "budget": "cheap" },
-      "then": ["Thailand", "Vietnam", "Mexico", "Brazil", "Egypt"]
-    },
-    {
-      "if": { "weather": "warm", "budget": "medium" },
-      "then": ["Italy", "Spain", "Greece", "Portugal"]
-    },
-    {
-      "if": { "weather": "warm", "budget": "expensive" },
-      "then": ["Australia", "Japan", "Costa Rica"]
-    },
+{
+  "Switzerland": {
+    "continent": "Europe",
+    "time": [12,1,2,3],
+    "budget": 9,
+    "weather": 3,
+    "duration": 6,
+    "distance": 2,
+    "type": [3,4,5]
+  },
+  "Italy": {
+    "continent": "Europe",
+    "time": [4,5,6,9,10],
+    "budget": 6,
+    "weather": 7,
+    "duration": 6,
+    "distance": 1,
+    "type": [4,5,6]
+  },
+  "Spain": {
+    "continent": "Europe",
+    "time": [5,6,9,10],
+    "budget": 4,
+    "weather": 7,
+    "duration": 5,
+    "distance": 1,
+    "type": [3,4]
+  },
+  "France": {
+    "continent": "Europe",
+    "time": [4,5,6,9,10],
+    "budget": 5,
+    "weather": 7,
+    "duration": 6,
+    "distance": 1,
+    "type": [3,4]
+  },
+  "Germany": {
+    "continent": "Europe",
+    "time": [4,5,6,9,10],
+    "budget": 5,
+    "weather": 7,
+    "duration": 6,
+    "distance": 1,
+    "type": [4,5]
+  },
+  "Greece": {
+    "continent": "Europe",
+    "time": [5,6,9,10],
+    "budget": 5,
+    "weather": 8,
+    "duration": 6,
+    "distance": 1,
+    "type": [4,5,6]
+  },
+  "Norway": {
+    "continent": "Europe",
+    "time": [6,7,8],
+    "budget": 7,
+    "weather": 3,
+    "duration": 6,
+    "distance": 2,
+    "type": [5,6]
+  },
+  "Portugal": {
+    "continent": "Europe",
+    "time": [5,6,9,10],
+    "budget": 4,
+    "weather": 7,
+    "duration": 5,
+    "distance": 1,
+    "type": [3,4,5]
+  },
+  "United Kingdom": {
+    "continent": "Europe",
+    "time": [5,6,7,8,9],
+    "budget": 7,
+    "weather": 6,
+    "duration": 6,
+    "distance": 1,
+    "type": [4,5]
+  },
+  "Turkey": {
+    "continent": "Europe/Asia",
+    "time": [4,5,9,10],
+    "budget": 5,
+    "weather": 7,
+    "duration": 6,
+    "distance": 2,
+    "type": [4,5,6]
+  },
 
-    {
-      "if": { "weather": "mild", "budget": "medium" },
-      "then": ["France", "Germany", "Italy", "Japan"]
-    },
-    {
-      "if": { "weather": "mild", "distance": "close" },
-      "then": ["Spain", "France", "Portugal", "Germany"]
-    },
+  "Thailand": {
+    "continent": "Asia",
+    "time": [12,1,2,3],
+    "budget": 4,
+    "weather": 9,
+    "duration": 8,
+    "distance": 9,
+    "type": [7,8,9]
+  },
+  "Japan": {
+    "continent": "Asia",
+    "time": [3,4,5,10,11],
+    "budget": 6,
+    "weather": 6,
+    "duration": 7,
+    "distance": 8,
+    "type": [5,6]
+  },
+  "Vietnam": {
+    "continent": "Asia",
+    "time": [11,12,1,2,3,4],
+    "budget": 5,
+    "weather": 8,
+    "duration": 7,
+    "distance": 8,
+    "type": [5,6,7]
+  },
+  "China": {
+    "continent": "Asia",
+    "time": [4,5,9,10],
+    "budget": 6,
+    "weather": 6,
+    "duration": 8,
+    "distance": 9,
+    "type": [5,6,7]
+  },
+  "India": {
+    "continent": "Asia",
+    "time": [11,12,1,2],
+    "budget": 4,
+    "weather": 8,
+    "duration": 8,
+    "distance": 9,
+    "type": [6,7,8]
+  },
+  "Dubai": {
+    "continent": "Asia",
+    "time": [11,12,1,2],
+    "budget": 8,
+    "weather": 9,
+    "duration": 6,
+    "distance": 8,
+    "type": [5,6]
+  },
+  "Russia": {
+    "continent": "Europe/Asia",
+    "time": [6,7,8],
+    "budget": 6,
+    "weather": 3,
+    "duration": 7,
+    "distance": 6,
+    "type": [5,6]
+  },
 
-    {
-      "if": { "weather": "cool", "budget": "expensive" },
-      "then": ["Norway", "Canada", "Switzerland"]
-    },
-    {
-      "if": { "weather": "cool", "distance": "medium" },
-      "then": ["Norway", "Iceland", "Canada"]
-    },
+  "Costa Rica": {
+    "continent": "America",
+    "time": [12,1,2,3],
+    "budget": 5,
+    "weather": 8,
+    "duration": 8,
+    "distance": 6,
+    "type": [7,8]
+  },
+  "Mexico": {
+    "continent": "America",
+    "time": [11,12,1,2,3,4],
+    "budget": 5,
+    "weather": 8,
+    "duration": 8,
+    "distance": 7,
+    "type": [5,6,7]
+  },
+  "Canada": {
+    "continent": "America",
+    "time": [6,7,8,9],
+    "budget": 6,
+    "weather": 5,
+    "duration": 7,
+    "distance": 8,
+    "type": [6,7]
+  },
+  "Brazil": {
+    "continent": "America",
+    "time": [12,1,2,3],
+    "budget": 6,
+    "weather": 9,
+    "duration": 8,
+    "distance": 7,
+    "type": [6,7]
+  },
+  "United States": {
+    "continent": "America",
+    "time": [5,6,7,8,9],
+    "budget": 8,
+    "weather": 7,
+    "duration": 8,
+    "distance": 6,
+    "type": [5,7,8]
+  },
+  "Argentina": {
+    "continent": "America",
+    "time": [11,12,1,2],
+    "budget": 5,
+    "weather": 7,
+    "duration": 8,
+    "distance": 8,
+    "type": [6,7]
+  },
 
-    {
-      "if": { "weather": "cold", "budget": "expensive" },
-      "then": ["Switzerland", "Iceland", "Norway"]
-    },
-    {
-      "if": { "weather": "cold", "duration": "short" },
-      "then": ["Switzerland", "Iceland"]
-    },
+  "New Zealand": {
+    "continent": "Oceania",
+    "time": [12,1,2,3],
+    "budget": 7,
+    "weather": 5,
+    "duration": 9,
+    "distance": 10,
+    "type": [6,7]
+  },
+  "Australia": {
+    "continent": "Oceania",
+    "time": [12,1,2,3],
+    "budget": 8,
+    "weather": 8,
+    "duration": 9,
+    "distance": 10,
+    "type": [6,7,8]
+  },
 
-    {
-      "if": { "distance": "far", "budget": "cheap" },
-      "then": ["Thailand", "Vietnam", "Egypt"]
-    },
-    {
-      "if": { "distance": "far", "budget": "medium" },
-      "then": ["Brazil", "South Africa", "Japan", "Costa Rica"]
-    },
-    {
-      "if": { "distance": "far", "duration": "long" },
-      "then": ["Australia", "New Zealand", "Brazil"]
-    },
-
-    {
-      "if": { "distance": "close", "budget": "medium" },
-      "then": ["Spain", "France", "Portugal", "Germany"]
-    },
-    {
-      "if": { "distance": "medium", "budget": "expensive" },
-      "then": ["Switzerland", "Norway", "Canada"]
-    },
-
-    {
-      "if": { "duration": "short", "distance": "close" },
-      "then": ["Spain", "France", "Portugal", "Germany"]
-    },
-    {
-      "if": { "duration": "medium", "distance": "medium" },
-      "then": ["Italy", "Greece", "Japan"]
-    },
-    {
-      "if": { "duration": "long", "weather": "warm" },
-      "then": ["Thailand", "Brazil", "Australia"]
-    }
-]
+  "South Africa": {
+    "continent": "Africa",
+    "time": [11,12,1,2,3],
+    "budget": 6,
+    "weather": 8,
+    "duration": 8,
+    "distance": 7,
+    "type": [6,7]
+  },
+  "Egypt": {
+    "continent": "Africa",
+    "time": [10,11,2,3,4],
+    "budget": 5,
+    "weather": 9,
+    "duration": 6,
+    "distance": 6,
+    "type": [5,6]
+  },
+  "Morocco": {
+    "continent": "Africa",
+    "time": [3,4,5,9,10],
+    "budget": 4,
+    "weather": 7,
+    "duration": 6,
+    "distance": 2,
+    "type": [4,5]
+  }
+}
