@@ -36,12 +36,3 @@ def fuzzify_user_input(user_input, fuzzy_sets):
             fuzzified_inputs[variable] = fuzzify(value, fuzzy_sets[variable])
 
     return fuzzified_inputs
-
-def extract_weather_label(fuzzified_inputs):
-    weather_fuzzy = fuzzified_inputs.get("weather")
-
-    if not weather_fuzzy:
-        return None
-
-    return max(weather_fuzzy, key=weather_fuzzy.get)
-
