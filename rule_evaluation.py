@@ -8,21 +8,19 @@ def evaluate_rules(fuzzified_inputs, rules, destinations):
         condition = rule["if"]
         recommended = rule["then"]
 
-        strength = 1.0
+        strengths = []
 
         for variable, label in condition.items():
+            if variable in fuzzified_inputs:
+                strengths.append(fuzzified_inputs[variable].get(label, 0))
 
-            if variable not in fuzzified_inputs:
-                strength = 0
-                break
-
-            strength = min(strength, fuzzified_inputs[variable].get(label, 0))
-
-        if strength == 0:
+        if not strengths:
             continue
+
+        rule_strength = sum(strengths) / len(strengths)
 
         for dest in recommended:
             if dest in destinations:
-                destination_scores[dest][f"r{idx}"] = strength
+                destination_scores[dest][f"r{idx}"] = rule_strength
 
     return destination_scores
